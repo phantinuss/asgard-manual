@@ -19,8 +19,8 @@ Hard disk           1 TB
 CPU Cores           8
 =================== =======
 
-License Management
-------------------
+Master License Management
+-------------------------
 
 Once you connect ASGARD systems with MASTER ASGARD, the licensing sections on connected ASGARD systems become inactive. The local ASGARD license will be replaced with the MASTER ASGARD license. Every ASGARD can issue scanning licenses to assets as long as the total number of scanned servers and workstations does not exceed the number of systems in the master license.
 
@@ -65,8 +65,8 @@ In MASTER ASGARD go to ``Asgard Management``, click the ``Add ASGARD`` button in
 
 **Note:** You don't have to provide a port in the hostname field. Don't use a URL like ``https://`` but just the FQDN. Remember that MASTER ASGARD must be able to reach ASGARD v2 systems on port 5443/tcp and ASGARD v1 systems on port 9443/tcp. Also make sure that the MASTER ASGARD system is able to resolve the hostname of the ASGARD system. 
 
-Scan Control
-------------
+Master Scan Control
+-------------------
 
 Scan Control in MASTER ASGARD looks the same as in an ASGARD server. The only difference is that you can select an ASGARD Server or "All ASGARDs" to run the scans on.  
 
@@ -76,8 +76,8 @@ Scan Control in MASTER ASGARD looks the same as in an ASGARD server. The only di
 
    Scan Control in MASTER ASGARD - New Group Scan
 
-Asset Management
-----------------
+Master Asset Management
+-----------------------
 
 Asset Management in MASTER ASGARD is very similar to the asset management in ASGARD. 
 
@@ -86,8 +86,8 @@ The only differences are:
 * ASGARD column shows to which ASGARD system the endpoint is connected
 * Only CSV export is allow (asset labeling via CSV import is unavailable)
 
-IOC Management
---------------
+Master IOC Management
+---------------------
 
 ASGARD provides two ways to import custom IOCs, YARA or Sigma rules:
 
@@ -106,8 +106,8 @@ The MASTER ASGARD server has the be restarted after that change.
 
 Note: This only works for setups that use ASGARD v2.4 or higher and MASTER v2.4 or higher.
 
-Evidence Collection 
--------------------
+Master Evidence Collection 
+--------------------------
 
 All collected evidence is available in MASTER ASGARD's ``Evidence Collection`` section. 
 
@@ -118,8 +118,8 @@ Download Section
 
 The ``Downloads`` section of MASTER ASGARD doesn't contain scanner packages since the scanners get downloaded and maintained on each of the connected ASGARD servers only. 
 
-Updates
--------
+Master Updates
+--------------
 
 The ``Updates`` section contains a tab in which upgrades for ASGARD can be installed. 
 
@@ -141,8 +141,8 @@ It is possible to set a certain THOR and Signatures version for each connected A
 
 Customers use this feature in cases in which they want to test a certain THOR version before using it in production. In this use case the ASGARD system that runs the test scans is set to automatic updates, while the ASGARD systems in production use versions that administratos set manually after successful test runs. 
 
-User Management
----------------
+Maseter User Management
+-----------------------
 
 MASTER ASGARD offers no no central user and role management for all connected ASGARD servers. Each Since MASTER ASGARD and ASGARD allow to use LDAP for authentication, we believe that complex and centralised user management should be based on LDAP.
 

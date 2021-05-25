@@ -32,7 +32,7 @@ Note: The THOR version numbers may be missing in a new installation. THOR is not
    :target: ../_images/image28.png
    :alt: image-20200608152043704
 
-   Overview
+   System Status Overview
 
 The logs section shows the latest and most relevant logs. Complete logs can be found at ``/var/lib/nextron/asgard2/log``
 
